@@ -1,0 +1,35 @@
+root
+├─ app
+│ ├─ (public)
+│ │ ├─ page.tsx # Lessenoverzicht
+│ │ └─ module
+│ │ └─ [id]
+│ │ └─ page.tsx # Lesweergave + blokkenrenderer
+│ ├─ login
+│ │ └─ page.tsx # Supabase magic-link login
+│ └─ api
+│ └─ health
+│ └─ route.ts # Healthcheck
+├─ components
+│ ├─ BlockRenderer.tsx # Renderen context/theory/sim/quiz/exit-ticket
+│ ├─ Quiz.tsx # Adaptieve quizcomponent
+│ ├─ Header.tsx
+│ └─ Protected.tsx # Gate voor ingelogde users
+├─ content
+│ └─ modules
+│ └─ beweging-snelheid.json # Module 1 content
+├─ lib
+│ ├─ adaptive.ts # Beslislogica M/V/H
+│ ├─ supabaseClient.ts # Client-side Supabase
+│ ├─ types.ts # TypeScript types
+│ └─ katex.tsx # KaTeX teX-render helper
+├─ public
+│ └─ phet-moving-man.html # PhET embed wrapper (optioneel)
+├─ styles
+│ └─ globals.css
+├─ .env.local.example
+├─ package.json
+├─ next.config.ts
+├─ postcss.config.js
+├─ tailwind.config.ts
+└─ README.md
